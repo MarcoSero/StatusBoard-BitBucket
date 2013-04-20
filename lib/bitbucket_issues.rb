@@ -17,7 +17,7 @@ module BitbucketIssues
 
       @bitbucket.repos.list do |repo|
         next unless repo.has_issues && repo.owner == @owner
-        puts "cheking issues inside #{repo.name}..."
+        puts "checking issues inside #{repo.name}..."
         begin
           issues = @bitbucket.issues.list_repo(@owner, repo.name, { :filter => 'status=open' } )
           issues.each do |issue|
