@@ -1,4 +1,6 @@
-require './lib/bitbucket_issues.rb'
+$ParentDir = File.expand_path(File.dirname(__FILE__))
+
+require $ParentDir + "/lib/bitbucket_issues.rb"
 
 config = {
   username: 'username',
