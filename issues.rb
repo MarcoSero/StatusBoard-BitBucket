@@ -1,4 +1,4 @@
-require './lib/bitbucket_issues.rb'
+require_relative './lib/bitbucket_issues.rb'
 
 config = {
   username: 'username',
